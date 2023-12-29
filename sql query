@@ -1,0 +1,9 @@
+create table student_marks (id int not null unique, name varchar(50),marks varchar(50),age varchar(50));
+insert into student_marks values(1,"ani",94,20),(2,"hari",92,19),(3,"priya",89,22),(5,"hg",96,21),(7,"smith",98,18),(6,"ram",76,21),(12,"jai",99,17),(13,"xsu",76,19),(16,"rropa",98,20),(27,"krish",98,25);
+delete from student_marks where name="ram";
+update student_marks set marks=92 where id=1;
+alter table student_marks add addrs varchar(100);
+alter table  student_marks add  latname varchar(50);
+alter table student_marks change column id stu_id float not null;
+alter table student_marks rename to student;
+
